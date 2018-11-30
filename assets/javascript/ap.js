@@ -7,6 +7,9 @@ function searchLastFM(artist) {
     }).then(function (response) {
         console.log(response);
         var artBio = $("<p>").html(response.artist.bio.summary);
+        // if (artBio.includes("Incorrect tag for")) {
+
+        // }
         var artImg = $("<img>").attr("src", response.artist.image[2]["#text"])
         artImg.attr("class", "art-pic");
         artBio.attr("class", "art-bio");
@@ -14,8 +17,8 @@ function searchLastFM(artist) {
         // if(!response.artist.url) {
         //     alert("no url found");
        
-        $("#img-bio").empty();
-        $("#img-bio").append(artImg, artBio);      
+        $(".img-bio").empty();
+        $(".img-bio").append(artImg, artBio);      
     });
 }
 

@@ -1,5 +1,9 @@
 .jumbotron {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    height: 50px;
+    padding: 5px 0px 50px 0px;
+    box-shadow: 5px 5px 5px darkgray;
+    background-color: lightgray;
 }
 
 .art-pic {
@@ -7,15 +11,37 @@
     margin-right: 10px;
 }
 
-#img-bio {
+.img-bio {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 
+.card-header {
+    background-color: lightgray;
+}
 #text-box {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #select-artist {
     margin-top: 10px;
+    box-shadow: 5px 5px 5px darkgray;    
+}
+
+.form-control {
+    box-shadow: 5px 5px 5px darkgray;
+}
+
+.card {
+    box-shadow: 5px 5px 5px darkgray;
+}
+
+#artist-input {
+    box-shadow: 5px 5px 5px darkgray;
+    border-color: lightgrey;
+}
+
+#artist-input:active {
+    box-shadow: 5px 5px 5px darkgray;
 }
 
