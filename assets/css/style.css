@@ -1,8 +1,21 @@
+.jumbotron {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .art-pic {
     float: left;
     margin-right: 10px;
 }
 
+#img-bio {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#text-box {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 #select-artist {
     margin-top: 10px;
 }
+

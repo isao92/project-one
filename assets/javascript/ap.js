@@ -6,7 +6,7 @@ function searchLastFM(artist) {
         method: "GET"
     }).then(function (response) {
         console.log(response);
-        var artBio = $("<p>").text(response.artist.bio.summary);
+        var artBio = $("<p>").html(response.artist.bio.summary);
         var artImg = $("<img>").attr("src", response.artist.image[2]["#text"])
         artImg.attr("class", "art-pic");
         artBio.attr("class", "art-bio");
