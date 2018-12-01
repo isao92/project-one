@@ -105,18 +105,35 @@ $(document).ready(function () {
             //for loop that adds corresponding address to the corresponding event
             for (x = i; x < i+1; x++) {
 
-                
-                //create one col div per div tag
-                var newDiv = $("<div>").addClass("col-3").attr("id", "number1" + i);
-                $("#number" + i).append(newDiv);
+                //avoid same col-3 inside col-3
+                console.log("This is the i: " + i);
 
-                //create one col div per div tag
-                var newDiv = $("<div>").addClass("col-5").attr("id", "number2" + i);
-                $("#number" + i).append(newDiv);
+                // date
+                var newDivDate = $("<div>").addClass("col-3").attr("id", "number1" + i);
+                var tag1=("#number1" + i);
+                if(tag1 == "#number114"){
+                    console.log("");
+                }else{
+                $("#number" + i).append(newDivDate);
+                }
 
-                //create one col div per div tag
-                var newDiv = $("<div>").addClass("col-4").attr("id", "number3" + i);
-                $("#number" + i).append(newDiv);
+                // name
+                var newDivName = $("<div>").addClass("col-5").attr("id", "number2" + i);
+                tag1=("#number2" + i);
+                if(tag1 == "#number214"){
+                    console.log("");
+                }else{
+                $("#number" + i).append(newDivName);
+                }
+
+                // image
+                var newDivImg = $("<div>").addClass("col-4").attr("id", "number3" + i);
+                tag1=("#number3" + i);
+                if(tag1 == "#number314"){
+                    console.log("");
+                }else{
+                $("#number" + i).append(newDivImg);
+                }
 
                 //for date
                 var eventDate = moment(response.start.local, "YYYY-MM-DDTHH:mm:ss");
