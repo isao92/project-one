@@ -1,6 +1,6 @@
 function searchLastFM(artist) {
 
-    var queryURL = "http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artist + "&api_key=1dcfb244939573ecb6439c31080d44c0&format=json";
+    var queryURL = "https://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=" + artist + "&api_key=1dcfb244939573ecb6439c31080d44c0&format=json";
     $.ajax({
         url: queryURL,
         method: "GET"
