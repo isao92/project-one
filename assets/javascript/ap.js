@@ -111,7 +111,7 @@ $(document).ready(function () {
                 // date
                 var newDivDate = $("<div>").addClass("col-3").attr("id", "number1" + i);
                 var tag1=("#number1" + i);
-                if(tag1 == "#number114"){
+                if(tag1 == "#number1" + i && i > 9){
                     console.log("");
                 }else{
                 $("#number" + i).append(newDivDate);
@@ -120,7 +120,7 @@ $(document).ready(function () {
                 // name
                 var newDivName = $("<div>").addClass("col-5").attr("id", "number2" + i);
                 tag1=("#number2" + i);
-                if(tag1 == "#number214"){
+                if(tag1 == "#number2" + i && i > 9){
                     console.log("");
                 }else{
                 $("#number" + i).append(newDivName);
@@ -129,7 +129,7 @@ $(document).ready(function () {
                 // image
                 var newDivImg = $("<div>").addClass("col-4").attr("id", "number3" + i);
                 tag1=("#number3" + i);
-                if(tag1 == "#number314"){
+                if(tag1 == "#number3" + i && i > 9){
                     console.log("");
                 }else{
                 $("#number" + i).append(newDivImg);
