@@ -1,14 +1,80 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <script src="ap.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
 </head>
+
 <body>
-    
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center">Where's The Jam</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-10">
+                <div class="card card-default">
+                    <div class="img-bio">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2" id="text-box">
+                <form id="artist-form">
+                    <label for="artist-input">Choose Your Artist</label>
+                    <input type="text" class="form-control" id="artist-input"><br>
+                    <input id="select-artist" type="submit" value="Hey Ho Let's Go!">
+                </form>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12" id="artist-concerts">
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h1 class="text-center">Related Events</h1>
+                    </div>
+                    <div id="new-artist-div"></div>
+                    <div class="card-body">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-12" id="artist-merch">
+                <div class="card card-default">
+                    <div class="card-header">
+                        <h1 class="text-center">Merch</h1>
+                    </div>
+
+                    <div class="card-body">
+                        
+                            <div class="row" id="art-div">
+                            </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+            <!--javascript-->
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="assets/javascript/ap.js"></script>
+            <script src="assets/javascript/app.js"></script>
+            <script src="assets/javascript/ap3.js"></script>
+        </div>
+    </div>
 </body>
+
 </html>
