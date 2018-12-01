@@ -1,3 +1,24 @@
-img{
-    width: 100%;
+.col-4 img{
+    width:100%;
+}
+
+.merch-price {
+    font-size: 20px;
+}
+.merch-tax {
+    font-size: 10px;
+    display: inline-block;
+}
+
+.merch-link:hover {
+    font-weight: bold;
+}
+
+.merch-image {
+    text-shadow: 5px    5px gray;
+}
+
+#merch-container-id {
+    text-align: center;
+    max-width: 50%;
 }
