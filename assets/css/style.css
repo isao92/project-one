@@ -2,23 +2,76 @@
     width:100%;
 }
 
-.merch-price {
-    font-size: 20px;
+.img-bio > img{
+    float: left;
+    margin-right: 10px;
 }
-.merch-tax {
-    font-size: 10px;
-    display: inline-block;
+
+.art-bio {
+    margin-left: 5px;
 }
+
 
 .merch-link:hover {
     font-weight: bold;
+    
 }
+
+.merch-link {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+}
+
 
 .merch-image {
     text-shadow: 5px    5px gray;
+    
+}
+
+
+#art-div{
+    font-size: 14px;
+}
+
+#new-artist-div > .row{
+    display: flex;
+    align-items: center;
 }
 
 #merch-container-id {
     text-align: center;
-    max-width: 50%;
+    max-width: 100%;
+
+}
+
+
+/*
+@media screen max-width: 640px
+*/
+@media screen and (max-width: 640px) {
+    #new-artist-div {
+        font-size: 13px;
+    }
+    .merch-title {
+        font-size: 13px;
+        margin-top: 15px;
+    }
+
+
+    
+    .merch-price {
+        font-size: 13px;
+    }
+
+    .merch-link {
+        position: initial;
+        bottom: 0;
+        left: 30%;
+    }
+
+    .merch-items > img{
+        height: 55%;
+    }
+    
 }
