@@ -9,6 +9,7 @@ $(document).ready(function () {
         // Storing the artist name
         var inputArtist = $("#artist-input").val().trim();
         $("#new-artist-div").empty();
+        $("#new-artist-div2").empty();
         // Running the getIdsFromKeyword function to extract id's
         getIdsFromKeyword(inputArtist);
         // search by music category
@@ -40,6 +41,10 @@ $(document).ready(function () {
                     //create one row div per artist
                     var newDiv = $("<div>").addClass("row mt-2 mb-2").attr("id", "number" + i);
                     $("#new-artist-div").append(newDiv);
+
+                    //for a copy
+                    var newDiv2 = $("<div>").addClass("row mt-2 mb-2").attr("id", "numberm" + i);
+                    $("#new-artist-div2").append(newDiv2);
 
                     //IF ARTIST WAS FOUND IN MUSIC CATEGORY
                     artistTracker++;
@@ -112,6 +117,7 @@ $(document).ready(function () {
                 var newDivDate = $("<div>").addClass("col-3").attr("id", "number1" + i);
                 var tag1=("#number1" + i);
                 if(tag1 == "#number1" + i && i > 9){
+                    //in case it wants to print a col inside a col
                     console.log("");
                 }else{
                 $("#number" + i).append(newDivDate);
@@ -135,6 +141,7 @@ $(document).ready(function () {
                 $("#number" + i).append(newDivImg);
                 }
 
+
                 //for date
                 var eventDate = moment(response.start.local, "YYYY-MM-DDTHH:mm:ss");
                 var formatDate = eventDate.format("LLLL");
@@ -149,6 +156,44 @@ $(document).ready(function () {
                 //for image
                 var artistImage = $("<img>").attr("src", response.logo.url);
                 $("#number3" + i).append(artistImage);
+
+
+
+                // DATE FOR MOBILE
+                var newDivDate = $("<div>").addClass("col-4").attr("id", "numberm1" + i);
+                var tag1=("#numberm1" + i);
+                if(tag1 == "#numberm1" + i && i > 9){
+                    //in case it wants to print a col inside a col
+                    console.log("");
+                }else{
+                $("#numberm" + i).append(newDivDate);
+                }
+
+                // name
+                var newDivName = $("<div>").addClass("col-8").attr("id", "numberm2" + i);
+                tag1=("#numberm2" + i);
+                if(tag1 == "#numberm2" + i && i > 9){
+                    console.log("");
+                }else{
+                $("#numberm" + i).append(newDivName);
+                }
+
+                
+
+
+                //for date
+                var eventDate = moment(response.start.local, "YYYY-MM-DDTHH:mm:ss");
+                var formatDate = eventDate.format("LLLL");
+                $("#numberm1" + i).append(formatDate);
+
+                //for address and description
+                var description = (response.name.text);
+                $("#numberm2" + i).append("<h6>" + description + "</h6>");
+                var address1 = (response.venue.address.localized_address_display);
+                $("#numberm2" + i).append("<p>Address: " + address1 + "</p>");
+                
+                
+
                 break;
             }
 

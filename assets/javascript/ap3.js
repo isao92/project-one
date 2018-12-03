@@ -25,7 +25,8 @@ $(document).ready(function () {
         var div = $("<div>").addClass("col-md-3 merch-items");
         var itemTitle = $("<p>").text(newerResponse.findItemsByKeywordsResponse[0].searchResult[0].item[i].title).addClass("merch-title");
           var itemImage = $("<img>").attr("src", newerResponse.findItemsByKeywordsResponse[0].searchResult[0].item[i].galleryURL).addClass("merch-image");
-          
+          console.log(newerResponse);
+          console.log(newerResponse.findItemsByKeywordsResponse[0].searchResult[0].item[i].galleryURL)
           var itemPrice = $("<p>").text("$" + newerResponse.findItemsByKeywordsResponse[0].searchResult[0].item[i].sellingStatus[0].currentPrice[0].__value__ + " USD").addClass("merch-price");
         
         var itemGoto = $("<a>").attr("href", newerResponse.findItemsByKeywordsResponse[0].searchResult[0].item[i].viewItemURL).text("Buy on eBay").addClass("merch-link");

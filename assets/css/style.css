@@ -98,6 +98,20 @@ body {
 */
 @media screen and (max-width: 640px) {
 
+    #hide-if-mobile {
+        visibility: hidden;
+        overflow: hidden;
+        width: 0px;
+        height: 0px;
+    }
+
+    #keep-hidden {
+        visibility: visible;
+        width: 100%;
+        height: 100%;
+
+    }
+
     .col-4 img {
         width: 120%;
     }
@@ -106,6 +120,9 @@ body {
         font-size: .8em;
     }
     #new-artist-div {
+        font-size: 10px;
+    }
+    #new-artist-div2 {
         font-size: 10px;
     }
     .merch-title {
