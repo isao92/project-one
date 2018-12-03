@@ -25,5 +25,6 @@ function searchLastFM(artist) {
     searchLastFM(inputArtist);
     $("#hide-it").removeClass("hidden");
     $("#hide-it2").removeClass("hidden");
+    $("#keep-hidden").addClass("hidden");
     // searchLastFM(inputArtist);
   });

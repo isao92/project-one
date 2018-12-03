@@ -32,9 +32,9 @@
                     <form id="artist-form">
     
                         <div class="card-body" id="artist-request">
-                            <h4>Where's The Jam?</h4>
+                            
                             <label for="artist-input">Choose Your Artist</label>
-                            <input type="text" class="form-control" id="artist-input"><br>
+                            <input type="text" class="form-control" placeholder="Enter artist or band" id="artist-input"><br>
                             <input id="select-artist" type="submit" value="Hey Ho Let's Go!">
                         </div>
                     </form>
@@ -68,9 +68,16 @@
                             <h5 class="text-center">Related Events</h5>
                         </div>
 
-                        <div class="card-body">
+                        <div class="card-body" id="hide-if-mobile">
                             <div id="new-artist-div"></div>
                         </div>
+                        <!-- for mobile -->
+                        <div class="hidden" id="keep-hidden">
+                        <div class="card-body">
+                            <div id="new-artist-div2"></div>
+
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
