@@ -85,7 +85,7 @@ $(document).ready(function () {
 
             //hide concert and merch divs if artist not found
             if (!foundArtist) {
-                alert("No artist found!");
+                console.log("No artist found!");
             }
 
         });
@@ -142,7 +142,7 @@ $(document).ready(function () {
 
                 //for address and description
                 var description = (response.name.text);
-                $("#number2" + i).append("<h5>" + description + "</h5>");
+                $("#number2" + i).append("<h6>" + description + "</h6>");
                 var address1 = (response.venue.address.localized_address_display);
                 $("#number2" + i).append("<p>Address: " + address1 + "</p>");
                 

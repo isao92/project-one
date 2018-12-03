@@ -6,80 +6,103 @@
         crossorigin="anonymous">
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Where's The Jam</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
 </head>
 
 <body>
-
+    <!-- As a heading -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="mx-auto" style="width: 200px;" id="wtjnavbar">
+            <img src="WTJnoback.png">
+        </div>
+    </nav>
     <div class="container">
 
-        <!-- As a heading -->
-        <nav class="navbar navbar-light bg-light">
-            <span class="navbar-brand mb-0 h1">Where's The Jam</span>
-        </nav>
+
         <div class="row mt-4">
-            <div class="col-lg-9">
-                <div class="card card-default">
-                    <div class="card-body">
-                        <div class="img-bio">
 
+            <div class="col-lg-4" id="text-box">
+            </div>
+            <div class="col-lg-4" id="text-box">
+                    <form id="artist-form">
+    
+                        <div class="card-body" id="artist-request">
+                            <h4>Where's The Jam?</h4>
+                            <label for="artist-input">Choose Your Artist</label>
+                            <input type="text" class="form-control" id="artist-input"><br>
+                            <input id="select-artist" type="submit" value="Hey Ho Let's Go!">
+                        </div>
+                    </form>
+                </div>
+
+            <div class="hidden" id="hide-it">
+                <div class="col-lg-12">
+
+                    <div class="card card-default">
+
+                        <div class="card-header">
+                            <h5 class="text-center" id="artist-name">Who's The Jam?</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="img-bio">
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3" id="text-box">
-                <form id="artist-form">
-                    <div class="card-body">
-                        <label for="artist-input">Choose Your Artist</label>
-                        <input type="text" class="form-control" id="artist-input"><br>
-                        <input id="select-artist" type="submit" value="Hey Ho Let's Go!">
-                    </div>
-                </form>
-            </div>
+
+
         </div>
         <br>
-        <div class="row">
-            <div class="col-lg-12" id="artist-concerts">
-                <div class="card card-default">
-                    <div class="card-header">
-                        <h5 class="text-center">Related Events</h5>
-                    </div>
-
-                    <div class="card-body">
-                        <div id="new-artist-div"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-lg-12" id="artist-merch">
-                <div class="card card-default">
-                    <div class="card-header">
-                        <h5 class="text-center">Merch</h5>
-                    </div>
-
-                    <div class="card-body" id="merch-container-id">
-
-                        <div class="row" id="art-div">
+        <div class="hidden" id="hide-it2">
+            <div class="row">
+                <div class="col-lg-12" id="artist-concerts">
+                    <div class="card card-default">
+                        <div class="card-header">
+                            <h5 class="text-center">Related Events</h5>
                         </div>
 
-
+                        <div class="card-body">
+                            <div id="new-artist-div"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!--javascript-->
+            <br>
+            <div class="row">
+                <div class="col-lg-12" id="artist-merch">
+                    <div class="card card-default">
+                        <div class="card-header">
+                            <h5 class="text-center">Merch</h5>
+                        </div>
 
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script src="assets/javascript/ap.js"></script>
-            <script src="assets/javascript/app.js"></script>
-            <script src="assets/javascript/ap3.js"></script>
+                        <div class="card-body" id="merch-container-id">
+
+                            <div class="row" id="art-div">
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
+        <!--javascript-->
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="assets/javascript/ap.js"></script>
+        <script src="assets/javascript/app.js"></script>
+        <script src="assets/javascript/ap3.js"></script>
     </div>
+
 </body>
 
 </html>

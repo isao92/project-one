@@ -1,3 +1,42 @@
+body {
+    opacity: 0.85;
+}
+
+.hidden {
+    visibility: hidden;
+    overflow: hidden;
+    width: 0px;
+    height: 0px;
+}
+
+.card-header {
+    color: white;
+    font-family: 'Hanalei Fill', cursive;
+    background-color: rgb(158, 72, 50);
+    font-size: 1.2em;
+}
+
+
+
+.card {
+    box-shadow: 0px 2px 2px rgb(43, 41, 41);
+    background: rgb(250, 232, 198);
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.h5, h5 {
+    font-size: 1.8em;
+}
+
+.form-control {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+
 .col-4 img{
     width:100%;
 }
@@ -11,6 +50,9 @@
     margin-left: 5px;
 }
 
+.merch-title{
+    font-weight: 700;
+}
 
 .merch-link:hover {
     font-weight: bold;
@@ -29,6 +71,9 @@
     
 }
 
+#artist-request{
+    font-size: 1.2rem;
+}
 
 #art-div{
     font-size: 14px;
@@ -46,22 +91,38 @@
 }
 
 
+
+
 /*
 @media screen max-width: 640px
 */
 @media screen and (max-width: 640px) {
+
+    .col-4 img {
+        width: 120%;
+    }
+
+    .art-bio{
+        font-size: .8em;
+    }
     #new-artist-div {
-        font-size: 13px;
+        font-size: 10px;
     }
     .merch-title {
-        font-size: 13px;
-        margin-top: 15px;
+        font-size: 10px;
+        margin-top: 13px;
     }
 
+    .h6, h6{
+        font-size: 14px;
+    }
 
+    .h5, h5{
+        font-size: 22px;
+    }
     
     .merch-price {
-        font-size: 13px;
+        font-size: 10px;
     }
 
     .merch-link {
@@ -73,5 +134,10 @@
     .merch-items > img{
         height: 55%;
     }
+
     
+}
+
+#wtjnavbar > img {
+    width: 100%;
 }
