@@ -178,8 +178,14 @@ $(document).ready(function () {
                 $("#numberm" + i).append(newDivName);
                 }
 
-                
-
+                // image
+                var newDivImg = $("<div>").addClass("row").attr("id", "numberm3" + i);
+                tag1=("#numberm3" + i);
+                if(tag1 == "#numberm3" + i && i > 9){
+                    console.log("");
+                }else{
+                $("#numberm" + i).append(newDivImg);
+                }
 
                 //for date
                 var eventDate = moment(response.start.local, "YYYY-MM-DDTHH:mm:ss");
@@ -191,6 +197,10 @@ $(document).ready(function () {
                 $("#numberm2" + i).append("<h6>" + description + "</h6>");
                 var address1 = (response.venue.address.localized_address_display);
                 $("#numberm2" + i).append("<p>Address: " + address1 + "</p>");
+
+                //for image
+                var artistImage = $("<img>").attr("src", response.logo.url);
+                $("#numberm3" + i).append(artistImage);
                 
                 
 
