@@ -82,6 +82,7 @@ body {
 #new-artist-div > .row{
     display: flex;
     align-items: center;
+    font-size: .8rem;
 }
 
 #merch-container-id {
@@ -91,12 +92,30 @@ body {
 }
 
 
+#wtjnavbar > img {
+    width: 100%;
+}
 
 
 /*
 @media screen max-width: 640px
 */
 @media screen and (max-width: 640px) {
+
+    #new-artist-div2 img{
+        height: 90%;
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    
+#wtjnavbar > img {
+    width: 80%;
+}
+
+    .card-body{
+        padding: .6rem;
+    }
 
     #hide-if-mobile {
         visibility: hidden;
@@ -153,8 +172,4 @@ body {
     }
 
     
-}
-
-#wtjnavbar > img {
-    width: 100%;
 }
